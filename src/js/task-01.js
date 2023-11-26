@@ -1,12 +1,12 @@
-// знайти елемент
-const categoryList = document.getElementById('categories');
-// знайти всі li
-const categoryLi = categoryList.querySelectorAll('li.item');
-console.log(`Number of categories: ${categoryLi.length}`);
-// інформація
-categoryLi.forEach((item) => {
-    const categoryTitle = item.querySelector('h2').textContent;
-    const categoryListCount = item.querySelectorAll('ul, li').length;
-    console.log(`Category: ${categoryTitle}`);
-    console.log(`Elements: ${categoryListCount}`);
-});
+const item = document.querySelectorAll('li.item');
+console.log('Number of categories:', item.length);
+
+
+item.forEach(list => {
+    const title = list.querySelector('h2').textContent;
+    const elem = list.querySelectorAll('ul li').length;
+
+    console.log('Category:', title);
+    console.log('Elements:', elem);
+})
+
