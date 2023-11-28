@@ -11,7 +11,6 @@ function fillForm(event) {
         alert("You don`t fill all the fields.")
         return
     } else {
-        console.dir(event.currentTarget)
         const { email, password } = event.currentTarget.elements;
         const user = {
             email: email.value,
