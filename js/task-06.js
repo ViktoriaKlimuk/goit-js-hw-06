@@ -11,3 +11,4 @@ function handleInput(event) {
         input.classList.add("invalid");
     }
 }
+
