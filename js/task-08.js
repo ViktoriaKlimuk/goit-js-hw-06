@@ -18,7 +18,6 @@ function fillForm(event) {
         };
         console.log(user);
     }
-    // form.reset()
 }
 
 form.addEventListener("submit", fillForm)
