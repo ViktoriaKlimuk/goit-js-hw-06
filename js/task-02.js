@@ -9,14 +9,15 @@ const ingredients = [
 
 //
 const category = document.getElementById('ingredients');
-console.log(category);
+const fragment = document.createDocumentFragment();
 //
 
+const liElements = ingredients.map(ingredient => {
+  const li = document.createElement("li");
+  li.textContent = ingredient;
+  li.classList.add('item');
+  return li
+})
 
-ingredients.forEach(ingredient => {
-  const list = document.createElement('li');
-  list.textContent = ingredient;
-  list.classList.add('item')
-  console.log(list);
-  category.append(list)
-});
+category.append(...liElements);
+
